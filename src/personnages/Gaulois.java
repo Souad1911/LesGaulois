@@ -5,11 +5,10 @@ public class Gaulois {
      private int force;
      private int effetPotion=1;
     
-	public Gaulois(String nom, int force, int effetPotion) {
+	public Gaulois(String nom, int force) {
 		super();
 		this.nom = nom;
 		this.force = force;
-		this.effetPotion = effetPotion;
 	}
 	  
 	public String getNom() {
@@ -27,7 +26,20 @@ public class Gaulois {
 		romain.recevoirCoup(force/3);
 	}
 	public String toString () {
-		return "Gaulois [ nom= " + nom + ", force ="+force + ", effetPotion=" + effetPotion + "]";
+	 return "Gaulois [ nom= " + nom + ", force ="+force + ", effetPotion=" + effetPotion + "]";
 	}
+	
+
+		
+		public static void main(String[] args) {
+			Gaulois asterix;
+			asterix =new Gaulois ("Asterix" , 8);
+			System.out.println(asterix.getNom());
+			System.out.println(asterix.prendreParole());
+			asterix.parler("bonjour");
+			
+			
+
+		}
 	
 }
