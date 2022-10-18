@@ -19,8 +19,6 @@ public class Romain {
     	System.out.println(prendreParole()+"<<" + texte + ">>");
     	
     }
-     
-    
     
 	private String prendreParole() {
 		
